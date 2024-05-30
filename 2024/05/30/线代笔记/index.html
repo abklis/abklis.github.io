@@ -6,13 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>abklis&#39; blog</title>
+  <title>线代笔记 | abklis&#39; blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="abklis&#39; blog">
-<meta property="og:url" content="http://example.com/index.html">
+  <meta name="description" content="第一章 行列式">
+<meta property="og:type" content="article">
+<meta property="og:title" content="线代笔记">
+<meta property="og:url" content="http://example.com/2024/05/30/%E7%BA%BF%E4%BB%A3%E7%AC%94%E8%AE%B0/index.html">
 <meta property="og:site_name" content="abklis&#39; blog">
+<meta property="og:description" content="第一章 行列式">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2024-05-30T05:43:03.000Z">
+<meta property="article:modified_time" content="2024-05-30T05:45:47.404Z">
 <meta property="article:author" content="abklis">
 <meta name="twitter:card" content="summary">
   
@@ -142,16 +146,14 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <article id="post-线代笔记" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-线代笔记" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2024/05/30/%E7%BA%BF%E4%BB%A3%E7%AC%94%E8%AE%B0/">线代笔记</a>
+    <h1 class="article-title" itemprop="name">
+      线代笔记
     </h1>
   
 
@@ -164,10 +166,61 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="第一章-行列式"><a href="#第一章-行列式" class="headerlink" title="第一章 行列式"></a>第一章 行列式</h1>
-        
-          <a class="article-more-a" href="/2024/05/30/%E7%BA%BF%E4%BB%A3%E7%AC%94%E8%AE%B0/#more">more >></a>
-        
+        <h1 id="第一章-行列式"><a href="#第一章-行列式" class="headerlink" title="第一章 行列式"></a>第一章 行列式</h1><span id="more"></span>
+
+<hr>
+<h2 id="1-1-二三阶行列式"><a href="#1-1-二三阶行列式" class="headerlink" title="1.1 二三阶行列式"></a>1.1 二三阶行列式</h2><p>$$<br>\begin{cases}<br>a_{11}x_1 + a_{12}x_2 &#x3D; b_1 \<br>a_{12}x_1 + a_{22}x_2 &#x3D; b_2</p>
+<p>\end{cases}<br>$$</p>
+<ol>
+<li>二阶行列式</li>
+</ol>
+<p>形如:<br>$$<br>D &#x3D; \begin{vmatrix}<br>a_{11}&amp;a_{12} \<br>a_{21}&amp;a_{22}<br>\end{vmatrix}<br>$$</p>
+<p>称为二阶行列式,构成行列式的数称为&#x3D;&#x3D;元素&#x3D;&#x3D;,$a_{ij}$称为行列式D的第i行第j列元素</p>
+<ol start="2">
+<li>主对角线:,副对角线&#x2F;</li>
+<li>三阶行列式</li>
+</ol>
+<p>对于三元线性方程组<br>$$<br>\begin{cases}<br>a_{11}x_1 + a_{12}x_2 + a_{13}x_3 &#x3D; b_1 \<br>a_{21}x_1 + a_{22}x_2 + a_{23}x_3 &#x3D; b_2 \<br>a_{31}x_1 + a_{32}x_2 + a_{33}x_3 &#x3D; b_3<br>\end{cases}<br>$$<br>我们引入三阶行列式<br>$$<br>D &#x3D; \begin{vmatrix}<br>a_{11}&amp;a_{12}&amp;a_{13}\<br>a_{21}&amp;a_{22}&amp;a_{23}\<br>a_{31}&amp;a_{32}&amp;a_{33}\<br>\end{vmatrix},<br>D_1 &#x3D; \begin{vmatrix}<br>b_{1}&amp;a_{12}&amp;a_{13}\<br>b_{2}&amp;a_{22}&amp;a_{23}\<br>b_{3}&amp;a_{32}&amp;a_{33}\<br>\end{vmatrix},<br>D_2 &#x3D; \begin{vmatrix}<br>a_{11}&amp;b_1&amp;a_{13}\<br>a_{21}&amp;b_2&amp;a_{23}\<br>a_{31}&amp;b_3&amp;a_{33}\<br>\end{vmatrix},<br>D &#x3D; \begin{vmatrix}<br>a_{11}&amp;a_{12}&amp;b_{1}\<br>a_{21}&amp;a_{22}&amp;b_{2}\<br>a_{31}&amp;a_{32}&amp;b_{3}\<br>\end{vmatrix}<br>$$<br>其中,D称之为方程组的&#x3D;&#x3D;系数行列式&#x3D;&#x3D;</p>
+<p>$x_1 &#x3D; \dfrac{D_1}{D},x_2 &#x3D; \dfrac{D_2}{D},x_3 &#x3D; \dfrac{D_3}{D}$</p>
+<h2 id="1-2-n阶行列式"><a href="#1-2-n阶行列式" class="headerlink" title="1.2 n阶行列式"></a>1.2 n阶行列式</h2><h3 id="一-排列的逆序与奇偶性"><a href="#一-排列的逆序与奇偶性" class="headerlink" title="一. 排列的逆序与奇偶性"></a>一. 排列的逆序与奇偶性</h3><ol>
+<li><strong>n级排列</strong>: n个自然数1,2,3,$\cdots$,n按照按照一定的次序排成的一个数组</li>
+<li><strong>自然排列</strong>:$1 2 \cdots n$称为自然排列</li>
+<li><strong>逆序数</strong>: 较大的数排在较小数的前面,称这两个数构成逆序,逆序数即为排列中逆序的总数</li>
+<li><strong>奇(偶)排列</strong>:逆序数为奇(偶)数的排列</li>
+<li>对换:两个数互换位置,相邻两个数对换称为临换<ul>
+<li>一次对换改变排列奇偶性</li>
+</ul>
+</li>
+</ol>
+<h3 id="二-n阶行列式的定义"><a href="#二-n阶行列式的定义" class="headerlink" title="二. n阶行列式的定义"></a>二. n阶行列式的定义</h3><p>符号<br>$$<br>D &#x3D; \begin{vmatrix}<br>a_{11}&amp;a_{12}&amp;\cdots&amp;a_{1n}\<br>a_{21}&amp;a_{22}&amp;\cdots&amp;a_{2n}\<br>\vdots&amp;\vdots&amp;\quad&amp;\vdots\<br>a_{n1}&amp;a_{n2}&amp;\cdots&amp;a_{nn}\<br>\end{vmatrix} &#x3D; \sum\limits_{i_1i_2\cdots i_n}(-1)^{\tau(i_1i_2 \cdots i_n)}a_{1i_1}a_{2i_2} \cdots a_{ni_n}<br>$$<br>表示n阶行列式,有n!项相加,每一项符号为$-1^{\tau(i_1i_2\cdots i_n)}$决定</p>
+<p><strong>上(下)三角行列式</strong>:主对角线上(下)面元素全为0的行列式,除主对角线全为0的为对角行列式($\Lambda$)<br>$$<br>主对角线上(下)三角行列式:D &#x3D; a_{11}a_{22}\cdots a_{nn}\<br>副对角线上(下)三角行列式:D &#x3D; (-1)^{\dfrac{n(n-1)}{2}}a_{1n}a_{2,n-1}\cdots a_{n1}<br>$$</p>
+<h3 id="三-行列式的性质"><a href="#三-行列式的性质" class="headerlink" title="三. 行列式的性质"></a>三. 行列式的性质</h3><p><strong>性质1</strong>:行列式与它的转置行列式相等</p>
+<ul>
+<li>转置行列式:把行列式D的行和列互换,记作$D^\Tau$,显然$(D^\Tau)^\Tau &#x3D; D$</li>
+</ul>
+<p><strong>性质2</strong>:交换行列式两行(两列),行列式改变符号</p>
+<ul>
+<li>推论:如果行列式有两行(列)完全相同,则行列式等于0</li>
+</ul>
+<p><strong>性质3</strong>:一个数k乘行列式,等于行列式某一行(列)的所有元素乘以k(也就是说,行列式某一行或列有公因子可以提到外面)</p>
+<ul>
+<li>推论:如果有两行(列)对应成比例,则行列式等于0</li>
+</ul>
+<p><strong>性质4</strong>:如果行列式的某一行(列)可以表示为两项的和,则该行列式可以表示为两个行列式的和<br>&#x3D;&#x3D;<strong>性质5</strong>: 行列式的第i行(列)元素的k倍加到第j行(列)的对应元素上,行列式的值不变&#x3D;&#x3D;</p>
+<h2 id="1-3行列式按行-列-展开"><a href="#1-3行列式按行-列-展开" class="headerlink" title="1.3行列式按行(列)展开"></a>1.3行列式按行(列)展开</h2><h3 id="一-余子式与代数余子式"><a href="#一-余子式与代数余子式" class="headerlink" title="一. 余子式与代数余子式"></a>一. 余子式与代数余子式</h3><p><strong>k阶子式</strong>:行列式D中取k行k列,交叉元素构成的行列式称为行列式D的k阶子式<br>![](C:&#x2F;Users&#x2F;abklis&#x2F;OneDrive&#x2F;Note Book&#x2F;线代图片&#x2F;k阶子式示例.png)<br><strong>代数余子式</strong>:把$a_{ij}$所在的行和列划去后,剩下的行列式叫做$a_{ij}$的余子式,记作$M_{ij}$,称$A_{ij}&#x3D;(-1)^{i+j} M_{ij}$,叫做$a_{ij}$的&#x3D;&#x3D;代数余子式&#x3D;&#x3D;</p>
+<h3 id="二-行列式按行-列-展开法则"><a href="#二-行列式按行-列-展开法则" class="headerlink" title="二. 行列式按行(列)展开法则"></a>二. 行列式按行(列)展开法则</h3><ul>
+<li><p><strong>行列式等于它的任一行(列)的各元素与其对应的代数余子式乘积之和</strong><br>  即 D &#x3D; $a_{i1}A_{i1} + a_{i2}A_{i2} +\cdots+ a_{in}A_{in} $</p>
+</li>
+<li><p><strong>行列式任一行（列）的元素与另一行（列）的对应元素的代数余子式乘积之和等于零</strong><br>  即 $a_{i1}A_{j1} + a_{i2}A_{j2} +\cdots+a_{in}A_{jn} &#x3D; 0,i \neq j$<br>  显然,如此相乘无异于把行列式D的”另外一行”替换为”某一行”,求出来的值相当于包含两个相同的”某一行”,其他数值不变的D’,显然D’&#x3D;0</p>
+</li>
+<li><p>范德蒙德行列式:</p>
+</li>
+</ul>
+<p>$$<br>D_n &#x3D; \begin{vmatrix}<br>1&amp;1&amp;1&amp;\cdots&amp;1 \<br>a_1&amp;a_2&amp;a_3&amp;\cdots&amp;a_n\<br>a_1^2&amp;a_2^2&amp;a_3^2&amp;\cdots&amp;a_n^2\<br>\vdots&amp;\vdots&amp;\vdots&amp;\quad&amp;\vdots\<br>a_1^{n-1}&amp;a_2^{n-1}&amp;a_3^{n-1}&amp;\cdots&amp;a_n^{n-1}<br>\end{vmatrix}<br>&#x3D;\prod\limits_{i\leqslant j &lt; i \leqslant n}(a_i - a_j)<br>$$</p>
+<h2 id="1-4-克莱姆-Cramer-法则"><a href="#1-4-克莱姆-Cramer-法则" class="headerlink" title="1.4 克莱姆(Cramer)法则"></a>1.4 克莱姆(Cramer)法则</h2><ul>
+<li>克莱姆(Cramer)法则:含有n个未知量和方程的线性方程组,当系数行列式D$\neq$0时,$x_j &#x3D; \dfrac{D_j}{D}$<br>  其中$D_j$为把D的第j列替换为方程组的常数列得到的行列式(例子参考1.1)</li>
+</ul>
+
       
 
       
@@ -178,16 +231,75 @@
       
 
       
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2024/05/30/%E7%BA%BF%E4%BB%A3%E7%AC%94%E8%AE%B0/">展开全文 >></a>
-        </p>
-      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2024/05/30/%E7%BA%BF%E4%BB%A3%E7%AC%94%E8%AE%B0/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+  
+    <a href="/2024/05/29/test/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">test</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -207,136 +319,14 @@
 
 
 
-
   
-    <article id="post-test" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2024/05/29/test/">test</a>
-    </h1>
   
 
-        
-        <a href="/2024/05/29/test/" class="archive-article-date">
-  	<time datetime="2024-05-29T04:42:08.769Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2024-05-29</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>测试一下能不能上传</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2024/05/29/test/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2024/05/29/hello-world/">Hello World</a>
-    </h1>
   
 
-        
-        <a href="/2024/05/29/hello-world/" class="archive-article-date">
-  	<time datetime="2024-05-29T01:02:54.110Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2024-05-29</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-        
-          <a class="article-more-a" href="/2024/05/29/hello-world/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2024/05/29/hello-world/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
   
+
   
 
 
@@ -359,8 +349,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
