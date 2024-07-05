@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on My New Hugo Site</title>
+    <link>http://localhost:1313/post/</link>
+    <description>Recent content in Posts on My New Hugo Site</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 05 Jul 2024 08:53:23 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Test</title>
+      <link>http://localhost:1313/post/test/</link>
+      <pubDate>Fri, 05 Jul 2024 08:53:23 +0800</pubDate>
+      <guid>http://localhost:1313/post/test/</guid>
+      <description>第一章 行列式 1.1 二三阶行列式 $$ \begin{cases} a_{11}x_1 + a_{12}x_2 = b_1 \ a_{12}x_1 + a_{22}x_2 = b_2&#xA;\end{cases} $$&#xA;二阶行列式 形如: $$ D = \begin{vmatrix} a_{11}&amp;amp;a_{12} \ a_{21}&amp;amp;a_{22} \end{vmatrix} $$&#xA;称为二阶行列式,构成行列式的数称为==元素==,$a_{ij}$称为行列式D的第i行第j列元素&#xA;主对角线:,副对角线/ 三阶行列式 对于三元线性方程组 $$ \begin{cases} a_{11}x_1 + a_{12}x_2 + a_{13}x_3 = b_1 \ a_{21}x_1 + a_{22}x_2 + a_{23}x_3 = b_2 \ a_{31}x_1 + a_{32}x_2 + a_{33}x_3 = b_3 \end{cases} $$ 我们引入三阶行列式 $$ D = \begin{vmatrix} a_{11}&amp;amp;a_{12}&amp;amp;a_{13}\ a_{21}&amp;amp;a_{22}&amp;amp;a_{23}\ a_{31}&amp;amp;a_{32}&amp;amp;a_{33}\ \end{vmatrix}, D_1 = \begin{vmatrix} b_{1}&amp;amp;a_{12}&amp;amp;a_{13}\ b_{2}&amp;amp;a_{22}&amp;amp;a_{23}\ b_{3}&amp;amp;a_{32}&amp;amp;a_{33}\ \end{vmatrix}, D_2 = \begin{vmatrix} a_{11}&amp;amp;b_1&amp;amp;a_{13}\ a_{21}&amp;amp;b_2&amp;amp;a_{23}\ a_{31}&amp;amp;b_3&amp;amp;a_{33}\ \end{vmatrix}, D = \begin{vmatrix} a_{11}&amp;amp;a_{12}&amp;amp;b_{1}\ a_{21}&amp;amp;a_{22}&amp;amp;b_{2}\ a_{31}&amp;amp;a_{32}&amp;amp;b_{3}\ \end{vmatrix} $$ 其中,D称之为方程组的==系数行列式==</description>
+    </item>
+  </channel>
+</rss>
